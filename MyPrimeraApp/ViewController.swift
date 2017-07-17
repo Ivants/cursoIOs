@@ -31,9 +31,18 @@ class ViewController: UIViewController {
         //mLabel.text = "Este es un nuevo mensaje"
     }
     
+    //Se manda a llamar de acuerdo al toque (Gestos)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     @IBAction func onClick(_ sender: Any) {
         let texto = mtextField.text!
-        mLabel.text = texto
+        mLabel.text = "Esto es una cadena: \(texto)"
+        //Haremos que el textFiel ya no sea el first responder
+        //Para que el teclado desaparezca a la hora de presionar el boton
+        //mtextField.resignFirstResponder()
     }
     
 
