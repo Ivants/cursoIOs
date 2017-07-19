@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         //mLabel.text = "Este es un nuevo mensaje"
         
-        
+        //
         //De esta forma se asocia un elemento con el delegate
         //mtextField.delegate = self
     }
