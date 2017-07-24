@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //Las acciones y/o eventos se definen con @IBAction
     
-
+    //Se puede cambiar la apariencia del teclado desde las propiedades del TextField
     @IBOutlet weak var mtextField: UITextField!
     @IBOutlet weak var mLabel: UILabel!
     
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    //Nosotros tenemos que indicarle a la aplicacion que queremos que el boton de enter del teclado tenga una funcionalidad en este caso al dar click en ese boton reasignamos el fisrtResponder para que el teclado se oculte despues de dar un enter
+    //Nosotros tenemos que indicarle a la aplicacion que queremos que el boton de enter del teclado tenga una funcionalidad en este caso al dar click en ese boton reasignamos el firstResponder para que el teclado se oculte despues de dar un enter
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         mtextField.resignFirstResponder()
         return false
